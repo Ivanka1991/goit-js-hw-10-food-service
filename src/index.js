@@ -1,5 +1,5 @@
 import menuTpl from './templates/templates.hbs';
-import menu from './menu.json';
+import menuElement from './menu.json';
 import './styles.css';
 
 
