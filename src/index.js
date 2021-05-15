@@ -5,10 +5,11 @@ import menu from './menu.json';
 
 
 const galleryMenu = document.querySelector('ul.js-menu');
+//console.log(galleryMenu)
 
 const markupMenu = menuTpl(menu);
 galleryMenu.insertAdjacentHTML('beforeend', markupMenu);
-
+//console.log(markupMenu)
 
 const theme = {
     LIGHT: 'light-theme',
@@ -33,6 +34,8 @@ function onThemeChenge(evt) {
     localStorage.setItem(STORAGE_KEY, isLight);
 
 }
+//console.log(onThemeChenge)
+
 
 currentTheme(savedTheme)
 
@@ -48,3 +51,4 @@ function currentTheme(savedTheme) {
     }
 
 }
+//console.log(currentTheme)
