@@ -3,14 +3,12 @@ import menuTpl from './templates/templates.hbs';
 import menu from './menu.json';
 
 
-// делаем разметку
+
 const galleryMenu = document.querySelector('ul.js-menu');
 
 const markupMenu = menuTpl(menu);
 galleryMenu.insertAdjacentHTML('beforeend', markupMenu);
 
-
-// делаем тему
 
 const theme = {
     LIGHT: 'light-theme',
